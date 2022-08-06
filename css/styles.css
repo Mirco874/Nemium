@@ -1,0 +1,253 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #424242;
+}
+
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 20%;
+    gap: 8vh;
+}
+
+header {
+    max-width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+aside {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding-left: 10vh;
+  }
+
+nav{
+    margin-bottom: 7vh;
+    font-size: 14px;
+}
+
+.titulo-navegacion{
+    font-weight: 400;
+}
+  
+.variante{
+    padding:10px 6px;
+    height: 40px;
+}  
+
+#nemium-a{
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.menu-contenidos{
+   font-weight: 700;    
+   }
+   
+.lista-navegacion {
+       list-style-type:none;
+       padding: 0;
+   }
+   
+.lista-contenidos {
+       padding-left: 2vh;
+}
+   
+.lista-contenidos li .enlace-tema{
+   text-decoration: none;
+   color:#616161 ;
+   font-weight: 400;
+}
+
+main{
+    padding-left: 5vh;
+    padding-right: 12vh;
+}
+
+footer{
+    max-width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;  
+}
+
+#background{
+    height: 350px;
+    width: 100%;
+    background-image: url('../assets/background-patron.png');
+}
+
+.titulo-principal, .parrafo-titulo-principal, .titulo-seccion{
+    color: #212121;
+}
+
+.titulo-principal{ 
+    width: 902px;
+    height: 70px;
+    line-height: 70px;
+    max-width: 100%;
+    font-size: 60px;
+    margin: 0;
+}
+
+.titulo-seccion{
+    font-size: 2rem;
+    width: 902px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.parrafo-seccion{
+    font-size: 24px;
+}
+
+.titulo-articulo{
+    height: 36px;
+    text-decoration: underline;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.parrafo-articulo{
+    font-size: 1rem;
+}
+
+.logo-herramienta{
+    height:50px;
+    width:50px;
+}
+
+.cita-textual{
+    width: 592px;
+    border-left: 4px solid #212121;
+    margin-left: 0px;
+    padding-left: 20px;
+}
+
+.cita-textual p{
+    font-size: 24px;
+    line-height: 32px; 
+}
+
+.cita-textual .autor{
+    color: #616161;
+}
+
+pre{
+    font-size: 1rem;
+    line-height: 24px;
+    background: #FEC62E;
+    padding-left: 2%;
+}
+
+code{
+    color: #000000;    
+}
+
+div.texto-codigo{
+    font-size: 1rem;
+    line-height: 24px;
+    background: #FEC62E;
+    padding-left: 2%;
+    word-wrap: break-word;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+.input-texto{
+    width: 280px;
+    height: 48px;
+    padding-left: 16px;
+    
+}
+
+.boton-submit{
+    position: absolute;
+    right: 1px;
+    background-color: #000000;
+    color: white;
+    width: 119px;
+    height: 55px;
+}
+
+.input-correo-envio{
+    display: inline;
+    width: 337px;
+    position: relative;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    background: #212429;
+    flex-direction: column;
+    padding-block: 30px;
+    }
+
+footer .parafo-footer{
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    }
+
+footer .enlace-red-social{
+    text-decoration: none;
+}
+
+footer .logo-red-social{
+    height: 18px;
+    width: 18px;
+}
+
+@media screen and  (max-width:800px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        padding: 0px 50px;
+    }
+
+    main{
+        padding-inline: 5% ;
+        
+    }
+
+    #navegacion-contenidos-curso{
+        display: none;
+    }
+    .titulo-principal,.titulo-seccion{
+        font-size: 24px;
+    }
+    .titulo-articulo{
+        font-size: 20px;
+    }
+    .cita-textual .cita, .cita-textual .autor{
+        font-size: 16px;
+    }
+
+    pre{
+        max-width: 100%;
+    }
+
+    .input-texto{
+        width: 90%;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+}
